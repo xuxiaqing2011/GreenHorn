@@ -21,7 +21,7 @@ const EmbedCalendar = () => {
 
 
 
-  let email = '[EMAIL]';
+  let email = '[EMAIL]'; //TODO Replace with email from DB and also ensure that firebase gives auth to read
   let titleColor = '6362a3';
   return (
     // TODO Create ternary to display calendar with button click and go away when clicked off like modal
