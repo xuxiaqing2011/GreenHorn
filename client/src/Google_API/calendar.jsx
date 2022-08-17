@@ -21,7 +21,7 @@ const EmbedCalendar = () => {
 
 
 
-  let email = '[EMAIL]';
+  let email = 'sbirvin1s@gmail.com';
   let titleColor = '6362a3';
   return (
     // TODO Create ternary to display calendar with button click and go away when clicked off like modal
