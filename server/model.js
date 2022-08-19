@@ -85,12 +85,7 @@ const getJobs = (uuid,industry, isRemote, employmentType, maxDistance, minSalary
                     POINT(business.coord_long, business.coord_lat)<@>POINT((SELECT * FROM matchedseekerlat LIMIT 1), (SELECT * FROM matchedseekerlong LIMIT 1))
                 ) as distance
                 FROM "Listings" business
-
-<<<<<<< HEAD
                 WHERE
-=======
-                WHERE
->>>>>>> 6b53b08effa6947de9055bbca7d4c6a539e91eb8
                     (POINT(business.coord_long, business.coord_lat)<@>POINT((SELECT * FROM matchedseekerlat LIMIT 1), (SELECT * FROM matchedseekerlong LIMIT 1))) <= ${maxDistance}
                     AND industry = '${industry}'
                     AND employment_type = '${employmentType}'
