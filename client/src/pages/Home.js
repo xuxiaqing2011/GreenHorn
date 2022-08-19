@@ -6,6 +6,7 @@ import LoginForm from "../components/loginComponents/LoginForm.jsx";
 import { InterviewInviteModal } from "../Google_API/interviewInvite.jsx";
 import PostJob from "../components/PostJob/PostJob.jsx";
 import HeaderGallery from "../components/Header/ImageGallery.jsx";
+import FilterFunctions from "../components/Filters/FilterFunctions.jsx";
 import Feed from "../components/Feed/Feed.jsx";
 import NavigationBar from '../components/NavBar/NavigationBar.jsx';
 
@@ -25,7 +26,7 @@ const Home = () => {
       <div>
         <Link to="recruiter">Redirect to Recruiter view </Link>
       </div>
-      <Feed view={{ view: "seeker" }} />
+      <Feed/>
     </>
   );
 };
